@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Added basic auto-layout constraints to prevent UI elements overlapping or being cut-off of the screen
 
 ## Video Walkthrough
 

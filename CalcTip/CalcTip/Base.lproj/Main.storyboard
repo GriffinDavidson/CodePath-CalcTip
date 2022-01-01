@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalcTip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idS-pK-e6c">
+                                <rect key="frame" x="20" y="108" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-k9-yWS">
+                                <rect key="frame" x="20" y="169" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-rb-CPe">
+                                <rect key="frame" x="20" y="306" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-PG-ON6" userLabel="TipAmountLabel">
+                                <rect key="frame" x="323" y="169" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjq-20-2Mi" userLabel="BillAmountTextField">
+                                <rect key="frame" x="362" y="101" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RvI-8I-by3" userLabel="TipControl">
+                                <rect key="frame" x="20" y="227" width="374" height="32"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="sla-Qw-sSu"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJh-IF-bFu" userLabel="totalLabel">
+                                <rect key="frame" x="324" y="306" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rjq-20-2Mi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="64g-5f-9Dd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rjq-20-2Mi" secondAttribute="trailing" constant="20" id="7E5-NH-Ytj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zMt-PG-ON6" secondAttribute="trailing" constant="46" id="BXy-gB-4rl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RvI-8I-by3" secondAttribute="trailing" constant="20" id="C4O-0V-sab"/>
+                            <constraint firstItem="idS-pK-e6c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hxt-Sg-B84"/>
+                            <constraint firstItem="idS-pK-e6c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="LYr-Do-KhK"/>
+                            <constraint firstItem="Rjq-20-2Mi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="NZ3-mg-7ya"/>
+                            <constraint firstItem="YAT-rb-CPe" firstAttribute="top" secondItem="RvI-8I-by3" secondAttribute="bottom" constant="48" id="Rcp-eb-eZ6"/>
+                            <constraint firstItem="idS-pK-e6c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TB0-Mg-Llh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJh-IF-bFu" secondAttribute="trailing" constant="45" id="U3h-2b-uNx"/>
+                            <constraint firstItem="RvI-8I-by3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bdI-fg-ac5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rjq-20-2Mi" secondAttribute="trailing" constant="20" id="dxj-Rh-wbq"/>
+                            <constraint firstItem="idS-pK-e6c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="fA7-6G-myV"/>
+                            <constraint firstItem="X2O-k9-yWS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ie6-mS-Yr5"/>
+                            <constraint firstItem="zMt-PG-ON6" firstAttribute="top" secondItem="Rjq-20-2Mi" secondAttribute="bottom" constant="34" id="l5w-CX-jBd"/>
+                            <constraint firstItem="RvI-8I-by3" firstAttribute="top" secondItem="X2O-k9-yWS" secondAttribute="bottom" constant="37" id="mVz-w0-Uie"/>
+                            <constraint firstItem="BJh-IF-bFu" firstAttribute="top" secondItem="RvI-8I-by3" secondAttribute="bottom" constant="48" id="u6C-lw-qyG"/>
+                            <constraint firstItem="X2O-k9-yWS" firstAttribute="top" secondItem="idS-pK-e6c" secondAttribute="bottom" constant="40" id="uwb-wd-CjH"/>
+                            <constraint firstItem="YAT-rb-CPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xL7-BU-pHY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="Rjq-20-2Mi" id="EwI-o0-zTZ"/>
+                        <outlet property="tipAmountLabel" destination="zMt-PG-ON6" id="Jsc-EH-zcB"/>
+                        <outlet property="tipControl" destination="RvI-8I-by3" id="whg-4M-YOk"/>
+                        <outlet property="totalLabel" destination="BJh-IF-bFu" id="mWp-05-WTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

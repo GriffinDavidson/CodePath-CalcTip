@@ -2,9 +2,9 @@
 
 **CalcTip** is a tip calculator application for iOS.
 
-Submitted by: **Griffin**
+Submitted by: **Griffin Davidson**
 
-Time spent: **2** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -18,21 +18,22 @@ The following **optional** features are implemented:
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
 - [x] Added basic auto-layout constraints to prevent UI elements overlapping or being cut-off of the screen
+- [x] Added ability to create a custom tip amount and is saved as the default tip amount. Saved across app restarts. Currently has a slight rounding problem with some numbers
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/HuoCvtG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/hNFfVce.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
-I've barely ever touched UIKit, so trying to understand this framework and build additional features into this very basic app proved extremely difficult. I've had some work with SwiftUI, but I don't know how I could connect the two frameworks. I'm optimistic that this online class will help push me to where I want to go
+I've barely ever touched UIKit, so trying to understand this framework and build additional features into this very basic app proved extremely difficult. I've had some work with SwiftUI, but I don't know how I could connect the two frameworks. I'm optimistic that this online class will help push me to where I want to go.
 
 ## License
 

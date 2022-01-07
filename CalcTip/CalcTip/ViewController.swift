@@ -48,13 +48,10 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(_ sender: Any) {
         
         let defaults = UserDefaults.standard
-        let defaultTipInt = defaults.double(forKey: "defaultTip")
-        let defaultTipString = String(format: "%.2f", defaultTipInt / 100)
-        
-        //Did my best to try to strip the number down to two decimals only
-        let defaultTip = Double(defaultTipString)!
-        
-        
+        let defaultTipInt = defaults.integer(forKey: "defaultTip")
+        let defaultTip = Double(defaultTipInt) / 100
+        //this is so far the best and most-accurate I can
+        //  get the slider to correspond to 2 decimal digits
         
         // Gets bill amount from text field input
         let bill = Double(billAmountTextField.text!) ?? 0

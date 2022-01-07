@@ -114,7 +114,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="66D-F6-I27" userLabel="defaultTipSlider">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="30" minimumValueImage="0.circle.fill" catalog="system" maximumValueImage="30.circle.fill" translatesAutoresizingMaskIntoConstraints="NO" id="66D-F6-I27" userLabel="defaultTipSlider">
                                 <rect key="frame" x="18" y="181" width="378" height="31"/>
                                 <connections>
                                     <action selector="setDefaultTip:" destination="XfU-NM-yCP" eventType="valueChanged" id="IGZ-29-IMw"/>
@@ -137,11 +137,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="66D-F6-I27" firstAttribute="top" secondItem="SKE-g8-eJb" secondAttribute="bottom" constant="8" id="2Yf-Je-ZE1"/>
-                            <constraint firstItem="66D-F6-I27" firstAttribute="leading" secondItem="7HR-CR-1nP" secondAttribute="leading" constant="20" id="AZj-GU-naK"/>
                             <constraint firstItem="Rfl-qK-DNW" firstAttribute="top" secondItem="7HR-CR-1nP" secondAttribute="top" constant="64" id="Ijx-wm-atZ"/>
                             <constraint firstItem="7HR-CR-1nP" firstAttribute="trailing" secondItem="Rfl-qK-DNW" secondAttribute="trailing" constant="20" id="Lvx-0v-GFM"/>
                             <constraint firstItem="7HR-CR-1nP" firstAttribute="trailing" secondItem="66D-F6-I27" secondAttribute="trailing" constant="20" id="RTc-qU-Ipe"/>
                             <constraint firstItem="SKE-g8-eJb" firstAttribute="leading" secondItem="7HR-CR-1nP" secondAttribute="leading" constant="20" id="UBe-1H-nxy"/>
+                            <constraint firstItem="66D-F6-I27" firstAttribute="leading" secondItem="7HR-CR-1nP" secondAttribute="leading" constant="20" id="cge-AO-o5A"/>
                             <constraint firstItem="SKE-g8-eJb" firstAttribute="top" secondItem="7HR-CR-1nP" secondAttribute="top" constant="64" id="gwC-ES-VgE"/>
                         </constraints>
                     </view>
@@ -175,6 +175,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="30.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

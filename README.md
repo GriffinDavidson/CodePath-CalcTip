@@ -4,7 +4,7 @@
 
 Submitted by: **Griffin Davidson**
 
-Time spent: **5** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -23,13 +23,13 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Added basic auto-layout constraints to prevent UI elements overlapping or being cut-off of the screen
-- [x] Added ability to create a custom tip amount and is saved as the default tip amount. Saved across app restarts. Currently has a slight rounding problem with some numbers
+- [x] Added ability to create a custom tip amount and is saved as the default tip amount. Saved across app restarts.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/hNFfVce.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/2z2EasI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 

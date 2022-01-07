@@ -25,11 +25,11 @@ class SettingsViewController: UIViewController {
         defaultTipSlider.addTarget(self, action: #selector(updateTipLabel(slider:)), for: .valueChanged)
         
         //Saves the slider to its current position
-        let defaultTip = defaults.float(forKey: "defaultTip")
-        defaultTipSlider.setValue(defaultTip, animated: false)
+        let defaultTip = defaults.integer(forKey: "defaultTip")
+        defaultTipSlider.setValue(Float(defaultTip), animated: false)
         
         //Displays the last tip amount in the textbox
-        defaultTipLabel.text = String(format: "%d", Int(defaultTip)) + "%"
+        defaultTipLabel.text = String(format: "%d", defaultTip) + "%"
     }
     
     //Saves the amount from the slider into User Defaults
